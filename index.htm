@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Notas DE 701</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#0b1a3a,#1e3c72);
+color:white;
+text-align:center;
+}
+
+/* reloj */
+#time{
+margin-top:10px;
+font-size:14px;
+opacity:0.8;
+}
+
+/* LOGIN CUADRO */
+#loginBox{
+margin-top:120px;
+display:inline-block;
+background:#0f2a55;
+padding:25px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+input{
+padding:10px;
+margin:6px;
+border:none;
+border-radius:8px;
+width:180px;
+outline:none;
+}
+
+button{
+padding:10px 14px;
+margin:6px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+background:#1e88e5;
+color:white;
+transition:0.2s;
+}
+
+button:hover{
+background:#1565c0;
+}
+
+/* MENU */
+.menu button{
+background:#1976d2;
+}
+
+/* APP */
+#app{
+margin-top:20px;
+}
+
+/* CARD (CUADRO BONITO) */
+.card{
+background:#0f2a55;
+margin:12px auto;
+padding:15px;
+border-radius:15px;
+width:85%;
+text-align:left;
+box-shadow:0 0 15px rgba(0,0,0,0.4);
+}
+
+/* OBSERVACIONES */
+.obs{
+background:#1e3c72;
+padding:6px;
+margin:4px;
+border-radius:6px;
+}
+
+/* TITULOS */
+h2,h3{
+margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>📊 SISTEMA DE NOTAS</h2>
+<div id="time"></div>
+
+<!-- LOGIN -->
+<div id="loginBox">
+<h3>🔐 Login</h3>
+<input id="user" placeholder="Usuario"><br>
+<input id="pass" type="password" placeholder="Contraseña"><br>
+<br>
+<button onclick="login()">Entrar</button>
+</div>
+
+<!-- APP -->
+<div id="app"></div>
+
+<script src="mcript.js"></script>
+
+</body>
+</html>
